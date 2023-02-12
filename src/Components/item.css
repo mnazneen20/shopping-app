@@ -1,0 +1,70 @@
+.itemCard{
+    text-align: center;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+}
+.zoombtn{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.itemimg{
+    margin-top: 2rem;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+.itemimg:hover {
+    scale: 1.1;
+}
+.itemimg:hover .overlay{
+    display: block;
+}
+.itemname{
+    height: 60px;
+    font-size: 0.9rem;
+    margin: 1.5rem 0.5rem;
+    font-weight: normal;
+}
+.pricetag{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.addtocartbtn {
+    font-size: 0.8rem;
+    width: 120px;
+    color: rgb(17, 41, 33);
+    font-family: 'Public Sans', sans-serif;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 2.5px solid rgb(17, 41, 33);
+    border-radius: 50px;
+    margin: 0 0 1rem;
+    cursor: pointer;
+}
+a.detailbtn:link,
+a.detailbtn:visited,
+a.detailbtn:hover,
+a.detailbtn:active{
+    display: inline-block;
+    font-size: 0.8rem;
+    width: 120px;
+    color: rgb(17, 41, 33);
+    font-family: 'Public Sans', sans-serif;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 2.5px solid rgb(17, 41, 33);
+    border-radius: 50px;
+    margin: 0 0 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.addtocartbtn:hover, a.detailbtn:hover {
+    background-color: rgb(17, 41, 33);
+    color: #fff;
+}

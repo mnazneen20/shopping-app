@@ -1,0 +1,95 @@
+.emptycart{
+    padding: 5rem;
+    text-align: center;
+}
+.emptycart button{
+    background-color: rgb(17, 41, 33);
+    border: none;
+    border-radius: 0;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    color: white;
+}
+.emptycart a:link,
+a:visited,
+a:hover,
+a:active {
+    font-size: inherit;
+    text-decoration: none;
+}
+.emptycart p{
+    font-size: 1.4rem;
+}
+.cartcontainer{
+    text-align: center;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.cartcontainer a:link,
+a:visited,
+a:hover,
+a:active{
+    font-size: inherit;
+    text-decoration: none;
+}
+.cartcard{
+    text-align: left;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 60%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.5fr 5fr;
+}
+.cartcardimg{
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+}
+.cartitemname{
+    font-size: 0.8rem;
+    line-height: 2;
+}
+.cartitemprice{
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 2;
+}
+.cartcard button{
+    background-color: rgb(17, 41, 33);
+    border: 2px solid rgb(17, 41, 33);
+    cursor: pointer;
+    color: white;
+    width: 1.5rem;
+    font-size: 1rem;
+}
+.cartcard input{
+    font-size: 1rem;
+    text-align: center;
+    width: 2rem;
+}
+.cartcontainer .totalamount{
+    text-align: right;
+}
+.actionbtns button{
+    width: 230px;
+    background-color: rgb(17, 41, 33);
+    border: none;
+    border-radius: 0;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 760px){
+    .cartcard{
+        padding: 1rem 0.5rem;
+        width: 85%;
+    }
+}

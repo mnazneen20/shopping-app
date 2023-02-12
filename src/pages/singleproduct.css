@@ -1,0 +1,97 @@
+.elements{
+    margin: 3rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    align-items: center;
+}
+.productimg {
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 3rem;
+    position: relative;
+}
+.zoom{
+    position: absolute;
+}
+.bigimg{
+    width: 18rem;
+    height: 18rem;
+    object-fit: contain;
+}
+.productalldetails{
+    padding: 0 3rem;
+}
+p.productcategory{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgb(17, 41, 33);
+    line-height: 2;
+}
+p.productname{
+    font-size: 1.3rem;
+    text-decoration: underline;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+p.productprice{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.cartingsection button{
+    background-color: rgb(17, 41, 33);
+    border: 2px solid rgb(17, 41, 33);
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+    width: 1.5rem;
+    font-size: 1rem;
+}
+.productnumbers{
+    font-size: 1rem;
+    text-align: center;
+    width: 2rem;
+}
+button.producttocart{
+    width: 130px;
+    background-color: rgb(17, 41, 33);
+    border: none;
+    border-radius: 5px;
+    padding: 0.4rem 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    color: white;
+    font-size: 0.8rem;
+}
+#wronginput{
+    font-weight: bold;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+#tick{
+    color: rgb(17, 41, 33);
+    position: relative;
+    top: 9px;
+    animation: tickanimation 1.5s infinite alternate;
+}
+@keyframes tickanimation {
+    0% {transform: rotate(0deg); scale: 1;}
+    50% {transform: rotate(-30deg);scale: 1.2;}
+    100% {transform: rotate(30deg);scale: 1;}
+}
+
+@media (max-width: 780px){
+    .elements{
+        margin: 1rem 1.5rem;
+        grid-template-columns: 1fr;
+    }
+    .productalldetails{
+        padding: 3rem 0;
+    }
+}

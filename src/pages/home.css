@@ -1,0 +1,7 @@
+.allitems {
+    margin: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}

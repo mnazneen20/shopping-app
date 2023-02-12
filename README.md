@@ -10,6 +10,6 @@ This is a `responsive` shopping app ui.
 
 -> User can see detail information about a single product in a separate page (with popup box for product photo).
 
--> There is a dedicated cart page
+-> There is a dedicated cart page for shopping summary.
 
 `React`, `CSS`, `Mui`, `fetch` are used for developing the site.

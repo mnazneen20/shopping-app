@@ -1,6 +1,6 @@
 # Shooping-app
 
-The Live Demo of the site is [here]().
+The Live Demo of the site is [here](https://tangerine-hotteok-b0302a.netlify.app/).
 
 This is a `responsive` shopping app ui.
 

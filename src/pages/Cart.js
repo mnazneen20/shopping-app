@@ -38,7 +38,7 @@ export default function Cart() {
 }
 
 function CartCard(props) {
-  const { cart, setcart } = useContext(ShopContext)
+  const { cart, setcart, deletefromcart } = useContext(ShopContext)
   const { addtocart, removefromcart } = props
 
 // handle the input changes of each cart
@@ -67,6 +67,7 @@ function CartCard(props) {
           <button onClick={() => addtocart(props.item)}>+</button>
         </div>
       </div>
+      <div><button className='cartbtn' onClick={() => deletefromcart(props.item)}>X</button></div>
     </div>
   )
 }

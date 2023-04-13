@@ -53,21 +53,14 @@ export default function ShopContextProvider(props) {
         setcart(updatedItems);
     }
 
-    // function deletefromcart(item) {
+    function deletefromcart(item) {
         
-    //     function updatedcart (currentcart, theitem) {
-    //         const itemindex = currentcart.indexOf(theitem);
-    //         currentcart.splice(itemindex, 1);
-    //         return currentcart
-    //     }
+        setcart(prev => {
+            return prev.filter(itemInCart => itemInCart.id !== item.id);
+        })
+    }
 
-    //     const newcart = updatedcart(cart, item);
-
-    //     console.log(newcart)
-    //     setcart(newcart);
-    // }
-
-    const contextValue = {loading, alldata, cart, setcart, addtocart, removefromcart, singleproduct, setsingleproduct}
+    const contextValue = {loading, alldata, cart, setcart, addtocart, removefromcart, singleproduct, setsingleproduct, deletefromcart}
 
   return (
     <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>
